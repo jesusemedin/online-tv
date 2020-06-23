@@ -1,4 +1,4 @@
-/* CONFIGURACION GLOBAL */
+/**************************************** CONFIGURACION GLOBAL ********************************************/
 html
 {
     box-sizing: border-box;
@@ -33,7 +33,7 @@ h4
 {
     font-size: 2.6rem;
 }
-/* HERRAMIENTAS */
+/********************************************** HERRAMIENTAS ****************************************/
 .contenedor{
     width: 120rem;
     max-width: 95%;
@@ -43,7 +43,19 @@ h4
 .logo{
     width: 25rem;
 }
-/* HEADER */
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.seccion{
+    margin: 2rem 0;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+/**************************************** HEADER ******************************************/
 .site-header{
 
     background-image: url(../img/header.jpg);
@@ -101,7 +113,7 @@ h4
 .iniciosesion img{
     width: 5rem;
 }
-/* BARRA DE NAVEGACION */
+/***********************************************8 BARRA DE NAVEGACION ***********************************************/
 .navegacion-principal{
     display: flex;
     flex-direction: column;
@@ -131,17 +143,56 @@ h4
     background-color: #ffffff;
     text-decoration: none;
     padding: 1rem;
-    transition: .5s ease-in-out;
+    transition: background .5s ease-in-out;
 }
 @media (min-width: 768px){
     .navegacion-principal a{
         color: #333333;
         width: 100%;
-        transition: .5s ease-in-out;
     }
 }
 .navegacion-principal a:hover{
     color:#ffffff;
     background-color: #2187c9;
 }
+/********************************************************* CONTENIDO PRINCIPAL *****************************************************/
+.background-inicio{
+    text-align: center;
+    background-image: url(../img/content.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articulos{
+    background-color: #f0f0f0;
+    border: 2px solid #acacac;
+    margin: 2rem;
+}
+.contenido-home{
+    text-align: center;
+    flex-basis: 70%;
+}
+@media (min-width: 768px){
+    .seccion-principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.contenido-home h3{
+    color: #2187c9;
+    font-size: 2rem;
+    font-weight: 400;
 
+}
+/* .separador{
+    padding-top: 5rem;
+    border-top: 2px solid #a5a5a5;
+} */
+.contenido-home iframe{
+    width: 90%;
+    padding-bottom: 1rem;
+}
+/************************************************ BARRA LATERAL ***************************************************/
+.asidebar{
+    flex-basis: 30%;
+}
